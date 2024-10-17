@@ -36,6 +36,7 @@
 
            OPEN INPUT EMPFILE.
            SET  WS-NOT-EOF TO  TRUE.
+           MOVE 0    TO TOTAL
            PERFORM UNTIL WS-EOF-IS-TRUE
                 READ EMPFILE
                      AT END
